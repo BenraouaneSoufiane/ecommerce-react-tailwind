@@ -33,11 +33,11 @@ app.get('/cart',async(req,res)=>{
     console.log(cart);
 
     res.set('Content-Type', 'application/json');
-    res.set('Access-Control-Allow-Origin', 'http://localhost:3001');
+    res.set('Access-Control-Allow-Origin', 'https://itstore.cryptocheckout.co/');
     res.set('Access-Control-Allow-Credentials', true);
     res.send(cart);
  });
-app.get('/product',async(req,res)=>{
+app.get('/getproduct',async(req,res)=>{
     const products = await fs.readFileSync('products.json');
 
 console.log(JSON.parse(products)[req.query.id]);
@@ -64,7 +64,7 @@ app.post('/addtocart',async(req,res)=>{
     
     
     res.set('Content-Type', 'application/json');
-    res.set('Access-Control-Allow-Origin', 'http://localhost:3001');
+    res.set('Access-Control-Allow-Origin', 'https://itstore.cryptocheckout.co/');
     res.set('Access-Control-Allow-Credentials', true);
     res.send(JSON.stringify({"result":result,"msg":msg}));
  }); 
@@ -97,11 +97,11 @@ app.post('/addtocart',async(req,res)=>{
     
     
     res.set('Content-Type', 'application/json');
-    res.set('Access-Control-Allow-Origin', 'http://localhost:3001');
+    res.set('Access-Control-Allow-Origin', 'https://itstore.cryptocheckout.co/');
     res.set('Access-Control-Allow-Credentials', true);
     res.send(JSON.stringify({"result":result,"msg":msg}));
  }); 
 //app.listen(80);
-//var server = https.createServer(options,app);
-var server = http.createServer(app);
-server.listen(3007);
+var server = https.createServer(options,app);
+//var server = http.createServer(app);
+server.listen(443);

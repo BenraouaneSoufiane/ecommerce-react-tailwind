@@ -19,18 +19,19 @@ export default () => {
     useEffect( () => { 
       async function fetchData() {
           try {
-              const res = await axios.get('http://localhost:3007/cart',{withCredentials: true}); 
+              const res = await axios.get('https://itstore.cryptocheckout.co/cart',{withCredentials: true}); 
               let products = [];
               var t = 0;
               for(let i=0;i<res.data.length;i++){
-                const p = await axios.get('http://localhost:3007/product?id='+res.data[i]);
+                const p = await axios.get('https://itstore.cryptocheckout.co/getproduct?id='+res.data[i]);
                 t = t + p.data.price;
                 setTotalItems(res.data.length);
                 setTotal(t);
                 products.push(p.data);
               }
-              console.log(products);
+              //console.log(products);
               setCart(products);
+              console.log(cart);
           } catch (err) {
               console.log(err);
           }

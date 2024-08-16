@@ -53,7 +53,7 @@ export default () => {
     const handleonclick = async()=>{
       setLoading('block');
       if(form['first-name'] && form['last-name'] && form.email && form.country && form['street-address'] && form.city && form.region && form.zip ){
-        const {data} = await axios.post('http://localhost:3007/submitorder', form,{
+        const {data} = await axios.post('https://itstore.cryptocheckout.co/submitorder', form,{
           withCredentials: true,
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -72,11 +72,11 @@ export default () => {
     useEffect( () => { 
       async function fetchData() {
           try {
-              const res = await axios.get('http://localhost:3007/cart',{withCredentials: true}); 
+              const res = await axios.get('https://itstore.cryptocheckout.co/cart',{withCredentials: true}); 
               let products = [];
               var t = 0;
               for(let i=0;i<res.data.length;i++){
-                const p = await axios.get('http://localhost:3007/product?id='+res.data[i]);
+                const p = await axios.get('https://itstore.cryptocheckout.co/getproduct?id='+res.data[i]);
                 t = t + p.data.price;
                 setTotal(t);
                 products.push(p.data);
