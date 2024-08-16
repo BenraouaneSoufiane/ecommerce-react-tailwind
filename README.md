@@ -1,2 +1,8 @@
-# it-store
-Basic/very simple IT Store built with AstroJS &amp; TailwindCSS
+# Getting started
+Basic IT Store built with Astro & TailwindCSS
+
+```
+npm install
+node server.mjs
+```
+## Enjoy :)

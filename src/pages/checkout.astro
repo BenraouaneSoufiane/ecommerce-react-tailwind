@@ -1,0 +1,12 @@
+---
+import Header from '../layouts/header.astro';
+import Checkout from '../components/checkout.tsx';
+
+if (!Astro.cookies.has("userId")){
+  Astro.cookies.set("userId", Date.now());
+}
+
+
+---
+<Header />
+<Checkout client:only='react' />

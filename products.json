@@ -1,0 +1,44 @@
+[{
+    "title":"Information reporting",
+    "description": "Through the data collection and monitoring, we can provide reports on information about your organization. We can create reports on topics such as the use of technology and information storage to help you understand how effective your company's current services are. Providing a software that helps streamline financial and project reporting. Also we arrange information in a way that helps you better understand your business and make important decisions.",
+    "excerpt": "Monitoring",
+    "featuredImg": "monitoring-min.jpg",
+    "Imgs":[
+        "ir1-min.jpg","ir2-min.jpg","ir3-min.jpg"
+    ],
+    "price": 145,
+    "currency": "USD"
+},
+{
+    "title":"Product managment",
+    "description": "Involves planning, organizing, and overseeing the execution of a specific project to achieve its goals within a set timeframe and budget. It includes defining the project scope, setting objectives, allocating resources, managing risks, coordinating team members, monitoring progress, and ensuring the project is completed successfully. We ensures that your product/project meets its goals, stays on schedule, and remains within budget.",
+    "excerpt": "Achieving goals within timeframe/budget",
+    "featuredImg": "management.jpg",
+    "Imgs":[
+        "pm1.jpg", "pm2-min.jpg", "pm3.jpg"
+    ],
+    "price": 200,
+    "currency": "USD"
+},
+{
+    "title":"Software development",
+    "description": "Processes to create custom applications that fulfill specific business needs. For example, a startup business may rely on its IT service team to create a software application for organizing and maintaining venture capitalist records. In these cases, IT can provide the services you need to develop personalized software and ensure the program's viability through continuous testing, development, maintenance. Includes also technical support and troubleshooting for software applications, programs and online tools. Teams that offer these services often guide users through the process of resolving technical errors or recommend further steps to take, such as sending in the device for repairs. With a dedicated technical support service, your organization can receive the technical assistance it needs when staff members have questions or challenges when using company software.",
+    "excerpt": "Troubleshooting & technical support",
+    "featuredImg": "tech.jpg",
+    "Imgs":[
+        "sd1.jpg","sd2.jpg","sd3.jpg"
+    ],
+    "price": 250,
+    "currency": "USD"
+},
+{
+    "title":"Hardware installation/maintenance",
+    "description": "Installing the computers, hard drives, printers, modems and routers that the company needs to operate. IT teams also evaluate a business's processes to determine the types of hardware that support its needs. In many businesses, technical teams are also responsible for maintaining hardware and updating computers, modems or routers to support productivity and performance, extends to VPS/Datacenters, IoT, VoIP, normal network/cellular networks,...",
+    "excerpt": "VPS/Datacenters, IoT, VoIP,...",
+    "featuredImg": "installation.jpg",
+    "Imgs":[
+      "h10.jpg","h11.jpg","h12.jpg"
+    ],
+    "price": 250,
+    "currency": "USD"
+}]
