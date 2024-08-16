@@ -1,5 +1,6 @@
 # IT Store
 Basic IT Store built with Astro & TailwindCSS, only functionalities mentionned in the readme are working
+live example: https://itstore.cryptocheckout.co
 
 ## Getting started
 ### installation
