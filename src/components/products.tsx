@@ -26,7 +26,7 @@ export default () => {
     let t = loading;
     t[index] = "block";
     setLoading({ ...t });
-    const { data } = await axios.post('https://itstore.cryptocheckout.co/addtocart', {
+    const { data } = await axios.post('https://it-store.cryptocheckout.co/addtocart', {
       productId: index
     }, {
       withCredentials: true,
@@ -43,7 +43,7 @@ export default () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await axios.get('https://itstore.cryptocheckout.co/products');
+        const res = await axios.get('https://it-store.cryptocheckout.co/products');
         setProducts(res.data);
         setShowed(true);
         //console.log(products);

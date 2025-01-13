@@ -33,7 +33,7 @@ app.get('/cart',async(req,res)=>{
     console.log(cart);
 
     res.set('Content-Type', 'application/json');
-    res.set('Access-Control-Allow-Origin', 'https://itstore.cryptocheckout.co/');
+    res.set('Access-Control-Allow-Origin', 'https://it-store.cryptocheckout.co/');
     res.set('Access-Control-Allow-Credentials', true);
     res.send(cart);
  });
@@ -59,12 +59,14 @@ app.post('/addtocart',async(req,res)=>{
         }
     }else{
         cart[req.cookies.userId]=[req.body.productId];
+        msg = 'Product were added successfully';
+        result = true;
     }
     await fs.writeFileSync('cart.json',JSON.stringify(cart,null,4));
     
     
     res.set('Content-Type', 'application/json');
-    res.set('Access-Control-Allow-Origin', 'https://itstore.cryptocheckout.co/');
+    res.set('Access-Control-Allow-Origin', 'https://it-store.cryptocheckout.co/');
     res.set('Access-Control-Allow-Credentials', true);
     res.send(JSON.stringify({"result":result,"msg":msg}));
  }); 
@@ -97,7 +99,7 @@ app.post('/addtocart',async(req,res)=>{
     
     
     res.set('Content-Type', 'application/json');
-    res.set('Access-Control-Allow-Origin', 'https://itstore.cryptocheckout.co/');
+    res.set('Access-Control-Allow-Origin', 'https://it-store.cryptocheckout.co/');
     res.set('Access-Control-Allow-Credentials', true);
     res.send(JSON.stringify({"result":result,"msg":msg}));
  }); 
