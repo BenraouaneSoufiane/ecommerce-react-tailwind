@@ -1,5 +1,5 @@
-# IT Store
-Basic IT Store built with Astro & TailwindCSS, only functionalities mentionned in the readme are working
+# Ecommerce with react & tailwind
+Basic IT Store built with react & tailwind, not all things are functionable, this is just PoC/sample
 live example: https://itstore.cryptocheckout.co
 
 ## Getting started
@@ -8,7 +8,7 @@ live example: https://itstore.cryptocheckout.co
 npm install
 ```
 ### Developement
-Before start, you may need to change ports in astro.config.mjs, products.tsx, checkout.tsx (api calls endpoint's host port) server.mjs & edit the authorizations like access-allow-origin,...
+Before start, you may need to change ports/urls in astro.config.mjs, products.tsx, checkout.tsx (api calls endpoint's host port) server.mjs & edit the authorizations like access-allow-origin,...
 In first terminal run:
 ```
 npm run dev
